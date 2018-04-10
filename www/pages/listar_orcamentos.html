@@ -1,0 +1,50 @@
+<script src="js/app.js"></script>
+<script src="js/orcamentos.js"></script>
+<script src="https://www.gstatic.com/firebasejs/4.10.1/firebase.js"></script>
+<script src="js/firebaseapp.js"></script>
+<div class="page" data-name="listar_orcamentos">
+    <div class="navbar">
+      <div class="navbar-inner sliding">
+        <div class="left">
+          <a href="#" class="link back">
+            <i class="icon icon-back"></i>
+            <span class="ios-only">Voltar</span>
+          </a>
+        </div>
+        <div class="title">Orçamentos Recebidos</div>
+      </div>
+    </div>
+    <div class="page-content">
+      <div class="block-title">Orçamentos Recebidos</div>
+        <div class="block">
+            <input type="text" id="exclui" placeholder="Insira o ID para excluir"/>
+            <input type="button" class="col button button-small button-fill" id="apaga" value="apaga" onclick="apaga()">
+            <div class="row">
+                <div class="col-20 fontestoque">Id</div>
+                <div class="col-20 fontestoque">Nome</div>
+                <div class="col-20 fontestoque">Email</div>
+                <div class="col-20 fontestoque">Telefone</div>
+                <div class="col-20 fontestoque">Mensagem</div>
+            </div>
+           <div id="usersList">
+           </div>
+
+      <!--<div class="list no-hairlines-md">
+        <div class="data-table">
+            <table>
+              <thead>
+                <tr>
+                  <th class="label-cell id-column">#</th>
+                  <th class="label-cell">Nome</th>
+                  <th class="label-cell">Email</th>
+                  <th class="label-cell">Telefone</th>
+                  <th class="label-cell">Mensagem</th>
+                </tr>
+              </thead>
+              <tbody id="usersList" class="label-cell">
+              </tbody>
+            </table>
+          </div>
+      </div>-->
+    </div>
+  </div>
